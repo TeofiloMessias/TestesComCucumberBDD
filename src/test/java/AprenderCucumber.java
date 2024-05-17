@@ -8,6 +8,7 @@ import org.junit.Assert;
 
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
 public class AprenderCucumber {
@@ -81,8 +82,36 @@ public class AprenderCucumber {
     	DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
     	String dataFormatada = format.format(entrega);
     	Assert.assertEquals(data,dataFormatada);
+    	        
+    }
+    @Dado("^que o ticket é AF(\\d+)$")
+    public void queOTicketÉAF(int arg1) throws Throwable {
+    
+    }
+
+    @Dado("^que o valor da passagem é R\\$ (\\d+),(\\d+)$")
+    public void queOValorDaPassagemÉR$(int arg1, int arg2) throws Throwable {
+       
+    }
+
+    @Dado("^que o nome do passageiro é \"(.{5,20})\"$")
+    public void queONomeDoPassageiroÉ(String arg1) throws Throwable {
+   
+    }
+
+    @Dado("^que o telefone do passageiro é (\\d+)-(\\d+)$")
+    public void queOTelefoneDoPassageiroÉ(int arg1, int arg2) throws Throwable {
+       
+    }
+
+    @Quando("^criar os steps$")
+    public void criarOsSteps() throws Throwable {
         
     }
 
-}
+    @Então("^o teste vai funcionar$")
+    public void oTesteVaiFuncionar() throws Throwable {
+       
+    }
 
+ }
