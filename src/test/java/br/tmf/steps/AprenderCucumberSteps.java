@@ -1,3 +1,4 @@
+package br.tmf.steps;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -6,13 +7,14 @@ import java.util.Date;
 
 import org.junit.Assert;
 
+import br.tmf.converters.DateConverter;
 import cucumber.api.Transform;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
-public class AprenderCucumber {
+public class AprenderCucumberSteps {
 	@Dado("^que criei o arquivo corretamente$")
     public void queCrieiOArquivoCorretamente() throws Throwable {
 		System.out.println("qualquer coisa");
@@ -93,10 +95,11 @@ public class AprenderCucumber {
        
     }
 
-    @Dado("^que o nome do passageiro é \"(.{5,20})\"$")
+    @Dado("^que o nome do passageiro é \"(.{10,100})\"$")
     public void queONomeDoPassageiroÉ(String arg1) throws Throwable {
    
     }
+
 
     @Dado("^que o telefone do passageiro é (\\d+)-(\\d+)$")
     public void queOTelefoneDoPassageiroÉ(int arg1, int arg2) throws Throwable {
@@ -112,5 +115,24 @@ public class AprenderCucumber {
     public void oTesteVaiFuncionar() throws Throwable {
        
     }
+    @Dado("^que o ticket é AB(\\d+)$")
+    public void queOTicketÉAB(int arg1) throws Throwable {
+       
+    }
+
+    @Dado("^que o ticket especial é AB(\\d+)$")
+    public void queOTicketEspecialÉAB(int arg1) throws Throwable {
+       
+    }
+    @Dado("^que o ticket é CD(\\d+)$")
+    public void queOTicketÉCD(int arg1) throws Throwable {
+        
+    }
+
+    @Dado("^que o ticket é AG(\\d+)$")
+    public void queOTicketÉAG(int arg1) throws Throwable {
+       
+    }
+
 
  }
