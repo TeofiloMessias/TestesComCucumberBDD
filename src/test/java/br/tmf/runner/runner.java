@@ -10,10 +10,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features/AprendendoCucumber.feature",
+		features = "src/test/resources/features/alugar_filme.feature",
 		glue = "br.tmf.steps",
 		plugin= "pretty",
-		tags = {"~@ignore,@atraso_na_entrega"},
+		tags = {},
+	//	tags = {"~@ignore,@atraso_na_entrega"},
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
 		dryRun = false,
