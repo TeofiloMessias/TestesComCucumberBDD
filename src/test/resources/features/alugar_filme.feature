@@ -5,9 +5,21 @@ Funcionalidade: Alugar Filme
 	Eu quero cadastrar alugéis de filmes
 	Para controlar preços  e datas de entregas
 	
+#Cenário: Deve alugar filem com sucesso!
+#	Dado um filme com estoque de 2 unidades
+#	E que o preço do aluguel seja R$ 3
+#	Quando alugar
+#	Então o preço do aluguel será R$ 3
+#	E a data de entrega será em 1 dias
+#	E o estoque do filme será 1 unidade
+
 Cenário: Deve alugar filem com sucesso!
-	Dado um filme com estoque de 2 unidades
-	E que o preço do aluguel seja R$ 3
+	Dado um filme
+	|estoque | 2 				|
+	|preco   | 3 				|
+	|tipo    |comum			|
+#	|tipo    |extendido	|
+#	|tipo    |semanal		|
 	Quando alugar
 	Então o preço do aluguel será R$ 3
 	E a data de entrega será em 1 dias
