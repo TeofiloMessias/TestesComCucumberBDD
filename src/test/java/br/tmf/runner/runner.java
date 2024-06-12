@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/features/alugar_filme.feature",
 		glue = "br.tmf.steps",
-		plugin= "pretty",
+		plugin= {"pretty", "html:target/report-html", "json:target/report.jason"},
 		tags = {},
 	//	tags = {"~@ignore,@atraso_na_entrega"},
 		monochrome = true,
