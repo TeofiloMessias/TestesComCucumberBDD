@@ -1,17 +1,18 @@
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TesteAmbiente {
 	public static void main(String[] args) {
-		//System.setProperty("webdriver.chromedriver.driver", "/src\\test\\resources\\drivers\\chromedriver.exe");
-		System.setProperty("webdriver.gecko.driver", "./src\\test\\resources\\drivers\\geckodriver.exe");
+	
+
+			System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Google\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
 		
 
-		//WebDriver driver = new ChromeDriver();
-		WebDriver driver = new FirefoxDriver();
+		//driver.navigate().to("https://jumptreinamentos.com.br");
+		driver.get("https://seubarriga.wcaquino.me/");
+			}
 
-		driver.navigate().to("https://jumptreinamentos.com.br");
-		//driver.navigate().to("https://srbarriga.herokuapp.com");
 	}
 
-}

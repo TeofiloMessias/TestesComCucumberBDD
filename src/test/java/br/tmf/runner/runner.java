@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features/alugar_filme.feature",
+		features = "src/test/resources/features/login.feature",
 		glue = "br.tmf.steps",
 		plugin= {"pretty", "html:target/report-html", "json:target/report.jason"},
 		tags = {},
