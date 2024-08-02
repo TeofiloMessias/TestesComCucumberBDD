@@ -5,6 +5,12 @@
 	<groupId>br.ja.jaguiteo</groupId>
 	<artifactId>CursoCucumber</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<!--para executar os teste via maven "mvn test -->
+	<properties>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+	    <maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -27,6 +33,7 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.0.0-alpha-2</version>
 		</dependency>
-
+		
+		
 	</dependencies>
 </project>

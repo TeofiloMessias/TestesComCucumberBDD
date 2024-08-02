@@ -7,8 +7,6 @@ import java.util.Date;
 
 import org.junit.Assert;
 
-import br.tmf.converters.DateConverter;
-import cucumber.api.Transform;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Então;
@@ -56,7 +54,7 @@ public class AprenderCucumberSteps {
     Date entrega = new Date();
     
     @Dado("^que a entrega é dia (.*)$")
-    public void queAEntregaÉDia(@Transform(DateConverter.class)Date data) throws Throwable {
+    public void queAEntregaÉDia(Date data) throws Throwable {
     	    
     	entrega = data;
         
